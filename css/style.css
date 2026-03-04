@@ -275,4 +275,5 @@ footer {
 footer a {
   color: #FFCB05;
   text-decoration: underline;
+  font-weight: bold;
 }
