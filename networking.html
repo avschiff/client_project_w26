@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Networking & Connections</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="#maincontent">Skip to main content</a>
+  <header>
+      <a href="#maincontent" class="skip-link">Skip to main content</a>
+      <div class="logo">
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "resume.html">Resumes</a></li>
-                <li><a href = "networking.html">Networking & Connections</a></li>
-                <li><a href = "portfolios.html">Portfolios</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href = "resume.html">Resumes</a></li>
+              <li><a href = "networking.html" class="active" aria-current="page">Networking</a></li>
+              <li><a href = "portfolios.html">Portfolios</a></li> 
+          </ul>
+      </nav>
+  </header>
 
     <main id="maincontent">
         <h1>Networking & Connections</h1>
@@ -40,8 +44,12 @@
         <section>
             <h2>Networking Events</h2>
             <p>Check out some images from recent networking <a href = "https://www.si.umich.edu/about-umsi/events">events</a> hosted by UMSI and other organizations:</p>
-            <img src="images/MCOMMONS-Earthfest2025-3Medium.jpeg" width = 250 alt="Image of people networking outdoors">
-            <img src="images/MCOMMONS-Earthfest2025-4.jpg" width = 250 alt="Image of people networking at a booth">
+            <div class="networking-images">
+                <img src="images/MCOMMONS-Earthfest2025-3Medium.jpeg" alt="Image of people networking outdoors">
+                <img src="images/MCOMMONS-Earthfest2025-4.jpg" alt="Image of people networking at a booth during Earthfest">
+                <img src="images/MCOMMONS 4B3A6947.jpg" alt="Image of a boy with a dog at a networking event">
+                <img src="images/MCOMMONS-Festifall202501935.jpg" alt="Image of people networking at Festifall">
+            </div>
         </section>
 
     </main>

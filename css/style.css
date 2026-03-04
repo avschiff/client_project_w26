@@ -1,0 +1,278 @@
+/* =========================
+   global styles
+========================= */
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #f7f7f7;
+  color: #00274C;
+  line-height: 1.6;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #FFCB05;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+section {
+  background: white;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* maintains 16:9 aspect ratio as suggested by github copilot */
+  border: none;
+  margin-top: 1rem;
+}
+
+a:focus {
+  outline: 3px solid #FFCB05;
+  outline-offset: 2px;
+}
+
+/* =========================
+   header
+========================= */
+
+header {
+  background-color: #FFCB05;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  position: relative;
+}
+
+.logo img {
+  max-width: 80px; 
+  height: auto;
+  margin: 0 auto; /* centers the logo horizontally */
+}
+
+.logo { /* added a background and padding to the logo to make it more visible */
+  background: #00274C;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* =========================
+   skip link
+========================= */
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%); /* hide off-screen -- learned about from https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translateY */
+  background: #00274C;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  transform: translateY(0); /* move back on-screen when focused */
+  outline: 3px solid white;
+}
+
+/* =========================
+   navigation
+========================= */
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  background: #00274C;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 3px solid #00274C; /* added so the active button isnt larger than other buttons*/
+}
+
+nav a:focus {
+  outline: 3px solid white;
+  outline-offset: 2px;
+}
+
+.active {
+  background-color: white;
+  color: #00274C;
+  font-weight: bold;
+  border: 3px solid #00274C;
+}
+
+/* =========================
+   lists
+========================= */
+
+ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li strong {
+  font-weight: bold;
+}
+
+/* =========================
+    homepage content
+========================= */
+
+/* start here section */
+.start {
+  display: grid;
+}
+
+.start ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 0.5rem;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.start li a {
+  display: flex;
+  align-items: center;
+  height: 100%; /* makes the entire area of the list item filled */
+  background: #f2f2f2; /* light gray background for better contrast with the blue border */
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-left: 5px solid #00274C;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #00274C;
+}
+
+/* resources section (also used in resume and portfolio page)*/
+.resources ul {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 0.5rem;
+}
+
+.resources li:nth-child(odd):last-child { /* if there is an odd number of items, make the last one span both columns, recieved help from github copilot to make this work*/
+  grid-column: span 2;
+} 
+
+.resources li a {
+  display: flex;
+  align-items: center;
+  background: white;
+  height: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-left: 6px solid #FFCB05;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #00274C;
+}
+
+/* =========================
+    networking page content
+========================= */
+.networking-images {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.networking-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0;
+}
+
+/* =========================
+    portfolio page content
+========================= */
+.portfolio-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+    resume page content
+========================= */
+
+/* steps section */
+ol {
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+  margin-bottom: 1rem;
+}
+
+ol li {
+  margin-bottom: 0.75rem;
+}
+
+/* =========================
+   footer
+========================= */
+
+footer {
+  background: #00274C;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #FFCB05;
+  text-decoration: none;
+}
