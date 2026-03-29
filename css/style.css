@@ -162,6 +162,10 @@ nav a:focus {
   display: none;
 }
 
+.navside ul {
+  display: none;
+}
+
 /* =========================
    lists
 ========================= */
