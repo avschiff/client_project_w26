@@ -157,6 +157,11 @@ nav a:focus {
   border: 3px solid #00274C;
 }
 
+/* make sidebar not visible on mobile */
+.navside {
+  display: none;
+}
+
 /* =========================
    lists
 ========================= */
@@ -373,11 +378,8 @@ footer a:hover {
     gap: 0.5rem;
   }
 
-  .sidebar {
-    width: 0.25fr;
-    position: sticky;
-    align-self: start;
-    padding: 1rem;
+  .navside {
+    display: block;
   }
 
   .navside ul {
@@ -388,6 +390,9 @@ footer a:hover {
   }
 
   .sidebar {
+    position: sticky;
+    align-self: start;
+    padding: 1rem;
     width: 100%;
     position: sticky;
     top: 1rem;
