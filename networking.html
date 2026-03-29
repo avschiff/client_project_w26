@@ -8,54 +8,73 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-      <a href="#maincontent" class="skip-link">Skip to main content</a>
-      <div class="logo">
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-      </div>
-      <nav>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href = "resume.html">Resumes</a></li>
-              <li><a href = "networking.html" class="active" aria-current="page">Networking</a></li>
-              <li><a href = "portfolios.html">Portfolios</a></li> 
-          </ul>
-      </nav>
-  </header>
-
-    <main id="maincontent">
-        <h1>Networking & Connections</h1>
-        <section>
-            <h2>Build Meaningful Professional Relationships</h2>
-            <p>Networking is a powerful tool for career development, opening doors to new opportunities, insights, and collaborations. Whether you're attending events, reaching out to professionals on LinkedIn, or engaging with alumni, effective networking can significantly enhance your career prospects.</p>
-            <p>On this page, you'll find strategies, tips, and resources to help you build and maintain a strong professional network that aligns with your career goals.</p>
-        </section>
-    
-        <section>
-            <h2>Networking Strategies</h2>
+    <header>
+        <a href="#maincontent" class="skip-link">Skip to main content</a>
+        <div class="logo">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </div>
+        <nav aria-label="Main site navigation">
             <ul>
-                <li><strong>Attend Events:</strong> Participate in industry conferences, workshops, and UMSI networking events to meet professionals in your field.</li>
-                <li><strong>Leverage Social Media:</strong> Use platforms like LinkedIn to connect with alumni, join relevant groups, and share your professional journey.</li>
-                <li><strong>Informational Interviews:</strong> Reach out to professionals for informational interviews to learn about their career paths and gain insights into the industry.</li>
-                <li><strong>Follow Up:</strong> After meeting someone, send a personalized follow-up message to express your appreciation and keep the conversation going.</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href = "resume.html">Resumes</a></li>
+                <li><a href = "networking.html" class="active" aria-current="page">Networking</a></li>
+                <li><a href = "portfolios.html">Portfolios</a></li> 
             </ul>
-        </section>
-    
-        <section>
-            <h2>Networking Events</h2>
-            <p>Check out some images from recent networking <a href = "https://www.si.umich.edu/about-umsi/events">events</a> hosted by UMSI and other organizations:</p>
-            <div class="networking-images">
-                <img src="images/MCOMMONS-Earthfest2025-3Medium.jpeg" alt="Image of people networking outdoors">
-                <img src="images/MCOMMONS-Earthfest2025-4.jpg" alt="Image of people networking at a booth during Earthfest">
-                <img src="images/MCOMMONS 4B3A6947.jpg" alt="Image of a boy with a dog at a networking event">
-                <img src="images/MCOMMONS-Festifall202501935.jpg" alt="Image of people networking at Festifall">
-            </div>
-        </section>
+        </nav>
+    </header>
 
-    </main>
+    <div class="desktop-layout">
+        <aside class="sidebar">
+        <nav class="navside" aria-label="Sidebar navigation">
+            <ul>
+            <li><a href="#relationships">Professional Relationships</a></li>
+            <li><a href="#strategies">Strategies</a></li>
+            <li><a href="#events">Event Photos</a></li>
+            </ul>
+        </nav>
+        </aside>
+
+        <main id="maincontent">
+            <h1>Networking & Connections</h1>
+            <section id="relationships">
+                <h2>Build Meaningful Professional Relationships</h2>
+                <p>Networking is a powerful tool for career development, opening doors to new opportunities, insights, and collaborations. Whether you're attending events, reaching out to professionals on LinkedIn, or engaging with alumni, effective networking can significantly enhance your career prospects.</p>
+                <p>On this page, you'll find strategies, tips, and resources to help you build and maintain a strong professional network that aligns with your career goals.</p>
+            </section>
+        
+            <section id="strategies">
+                <h2>Networking Strategies</h2>
+                <ul>
+                    <li><strong>Attend Events:</strong> Participate in industry conferences, workshops, and UMSI networking events to meet professionals in your field.</li>
+                    <li><strong>Leverage Social Media:</strong> Use platforms like LinkedIn to connect with alumni, join relevant groups, and share your professional journey.</li>
+                    <li><strong>Informational Interviews:</strong> Reach out to professionals for informational interviews to learn about their career paths and gain insights into the industry.</li>
+                    <li><strong>Follow Up:</strong> After meeting someone, send a personalized follow-up message to express your appreciation and keep the conversation going.</li>
+                </ul>
+            </section>
+        
+            <section id="events">
+                <h2>Networking Events</h2>
+                <p>Check out some images from recent networking <a href = "https://www.si.umich.edu/about-umsi/events">events</a> hosted by UMSI and other organizations:</p>
+                <div class="networking-images">
+                    <img src="images/MCOMMONS-Earthfest2025-3Medium.jpeg" alt="Image of people networking outdoors">
+                    <img src="images/MCOMMONS-Earthfest2025-4.jpg" alt="Image of people networking at a booth during Earthfest">
+                    <img src="images/MCOMMONS 4B3A6947.jpg" alt="Image of a boy with a dog at a networking event">
+                    <img src="images/MCOMMONS-Festifall202501935.jpg" alt="Image of people networking at Festifall">
+                </div>
+            </section>
+
+        </main>
+    </div>
 
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p>
+        University of Michigan School of Information |
+        <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a>
+        | © <span id="year"></span>
+        </p>
+        <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>

@@ -13,7 +13,7 @@
       <div class="logo">
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
       </div>
-        <nav>
+        <nav aria-label="Main site navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href = "resume.html">Resumes</a></li>
@@ -23,59 +23,78 @@
         </nav>
     </header>
 
-    <main id="maincontent">
-        <h1>Portfolios</h1>
-        <section class="portfolio-section">
-            <h2>Create an Impressive Portfolio to Showcase Your Work</h2>
-            <img src="images/SIBAevent.png" alt="UMSI portfolio event advertisement">
-            <p>A well-crafted portfolio is a powerful tool to demonstrate your skills, experiences, and accomplishments to potential employers. It provides tangible evidence of your capabilities and allows you to stand out in a competitive job market.</p>
-            <p>On this page, you'll find tips and resources to help you build an effective portfolio that highlights your strengths and aligns with your career goals.</p>
-        </section>
-    
-        <section class="portfolio-section">
-            <h2>Portfolio Building Tips</h2>
-            <img src="images/portfoliocomputer.jpeg" alt="Person working on computer to create a portfolio">
+    <div class="desktop-layout">
+        <aside class="sidebar">
+        <nav class="navside" aria-label="Sidebar navigation">
             <ul>
-                <li><strong>Select Your Best Work:</strong> Choose projects that showcase a range of skills and highlight your strengths. Quality over quantity is key.</li>
-                <li><strong>Organize Clearly:</strong> Structure your portfolio in a logical manner, making it easy for viewers to navigate and find relevant information.</li>
-                <li><strong>Provide Context:</strong> For each project, include a brief description outlining the objectives, your role, the tools used, and the outcomes.</li>
-                <li><strong>Keep It Updated:</strong> Regularly update your portfolio with new projects and experiences to reflect your current skills and achievements.</li>
-                <li><strong>Choose the Right Format:</strong> Decide between a digital or physical portfolio based on your industry and the preferences of potential employers.</li>
+                <li><a href="#impress">Create an Impressive Portfolio</a></li>
+                <li><a href="#tips">Portfolio Tips</a></li>
+                <li><a href="#resources">Resources</a></li>
             </ul>
-        </section>    
-        <section class="resources">
-            <h2>Portfolio Resources</h2>
-            <ul>
-                <li>
-                <a href="https://docs.google.com/document/d/1L8Sc0ezVVCvP9SdUDwr0hwrNAd3us0JBbmUpoCYN-rs/edit?tab=t.0" target="_blank">
-                    UX Portfolio Guide
-                </a>
-                </li>
-                <li>
-                <a href="https://docs.google.com/document/d/1i7B6OXVY3tD9ULkVViF6yk2N16Ell1w9KhCzM7WEmTk/edit?tab=t.0" target="_blank">
-                    Portfolios for all Pathways
-                </a>
-                </li>
-                <li>
-                <a href="https://docs.google.com/document/d/1xw46Cm9DzC2wVQFxr_Ct96kbddhAhchzqUJpJJTSESc/edit?tab=t.0" target="_blank">
-                    Portfolio Rubric
-                </a>
-                </li>
-                <li>
-                <a href="https://www.cofolios.com/" target="_blank">
-                    Cofolios Portfolio Examples
-                </a>
-                </li>
-            </ul>
-        </section>
-    
-    <!-- Content taken & modified from UMGPT with the prompt, "write me content for a portfolio page that includes an intro and tips for building a portfolio"
-    UMGPT. (2026). UMGPT (GPT-4.1 January 23rd version) [Large language model]. -->
-    
-    </main>
+        </nav>
+        </aside>
+        <main id="maincontent">
+            <h1>Portfolios</h1>
+            <section class="portfolio-section" id="impress">
+                <h2>Create an Impressive Portfolio to Showcase Your Work</h2>
+                <img src="images/SIBAevent.png" alt="UMSI portfolio event advertisement">
+                <p>A well-crafted portfolio is a powerful tool to demonstrate your skills, experiences, and accomplishments to potential employers. It provides tangible evidence of your capabilities and allows you to stand out in a competitive job market.</p>
+                <p>On this page, you'll find tips and resources to help you build an effective portfolio that highlights your strengths and aligns with your career goals.</p>
+            </section>
+        
+            <section class="portfolio-section" id="tips">
+                <h2>Portfolio Building Tips</h2>
+                <img src="images/portfoliocomputer.jpeg" alt="Person working on computer to create a portfolio">
+                <ul>
+                    <li><strong>Select Your Best Work:</strong> Choose projects that showcase a range of skills and highlight your strengths. Quality over quantity is key.</li>
+                    <li><strong>Organize Clearly:</strong> Structure your portfolio in a logical manner, making it easy for viewers to navigate and find relevant information.</li>
+                    <li><strong>Provide Context:</strong> For each project, include a brief description outlining the objectives, your role, the tools used, and the outcomes.</li>
+                    <li><strong>Keep It Updated:</strong> Regularly update your portfolio with new projects and experiences to reflect your current skills and achievements.</li>
+                    <li><strong>Choose the Right Format:</strong> Decide between a digital or physical portfolio based on your industry and the preferences of potential employers.</li>
+                </ul>
+            </section>    
+            <section class="resources" id="resources">
+                <h2>Portfolio Resources</h2>
+                <ul>
+                    <li>
+                    <a href="https://docs.google.com/document/d/1L8Sc0ezVVCvP9SdUDwr0hwrNAd3us0JBbmUpoCYN-rs/edit?tab=t.0" target="_blank">
+                        UX Portfolio Guide
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://docs.google.com/document/d/1i7B6OXVY3tD9ULkVViF6yk2N16Ell1w9KhCzM7WEmTk/edit?tab=t.0" target="_blank">
+                        Portfolios for all Pathways
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://docs.google.com/document/d/1xw46Cm9DzC2wVQFxr_Ct96kbddhAhchzqUJpJJTSESc/edit?tab=t.0" target="_blank">
+                        Portfolio Rubric
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://www.cofolios.com/" target="_blank">
+                        Cofolios Portfolio Examples
+                    </a>
+                    </li>
+                </ul>
+            </section>
+        
+        <!-- Content taken & modified from UMGPT with the prompt, "write me content for a portfolio page that includes an intro and tips for building a portfolio"
+        UMGPT. (2026). UMGPT (GPT-4.1 January 23rd version) [Large language model]. -->
+        
+        </main>
+
+    </div>
 
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p>
+        University of Michigan School of Information |
+        <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a>
+        | © <span id="year"></span>
+        </p>
+        <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>

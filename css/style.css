@@ -6,6 +6,11 @@ body {
   background-color: #f7f7f7;
   color: #00274C;
   line-height: 1.6;
+  font-size: 1rem; /* base is 16px */
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 main {
@@ -27,10 +32,6 @@ h2 {
 h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-}
-
-p {
-  margin-bottom: 1rem;
 }
 
 section {
@@ -57,6 +58,12 @@ iframe {
 a:focus {
   outline: 3px solid #FFCB05;
   outline-offset: 2px;
+}
+
+nav a,
+.resources li a,
+section {
+  transition: all 0.2s ease; /* added a transition for smoother hover effects, help from copilot */
 }
 
 /* =========================
@@ -132,6 +139,12 @@ nav a {
   border: 3px solid #00274C; /* added so the active button isnt larger than other buttons*/
 }
 
+nav a:hover {
+  background-color: #FFCB05;
+  color: #00274C;
+  border: 3px solid #FFCB05;
+}
+
 nav a:focus {
   outline: 3px solid white;
   outline-offset: 2px;
@@ -166,34 +179,7 @@ li strong {
     homepage content
 ========================= */
 
-/* start here section */
-.start {
-  display: grid;
-}
-
-.start ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem 0.5rem;
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 1rem;
-}
-
-.start li a {
-  display: flex;
-  align-items: center;
-  height: 100%; /* makes the entire area of the list item filled */
-  background: #f2f2f2; /* light gray background for better contrast with the blue border */
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-left: 5px solid #00274C;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #00274C;
-}
-
-/* resources section (also used in resume and portfolio page)*/
+/* resources section (also used in "start" section,resume page, and portfolio page)*/
 .resources ul {
   display: grid;
   list-style: none;
@@ -217,6 +203,12 @@ li strong {
   border-radius: 6px;
   text-decoration: none;
   color: #00274C;
+}
+
+.resources li a:hover { /* added a hover effect to the resource links to make them more interactive, help from copilot */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-left: 6px solid #00274C;
 }
 
 /* =========================
@@ -276,4 +268,146 @@ footer a {
   color: #FFCB05;
   text-decoration: underline;
   font-weight: bold;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* ========================
+    TABLET / DESKTOP BREAKPOINT
+=========================*/
+
+@media (min-width: 768px) {
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  li{
+    font-size: 1.1rem;
+  }
+
+  a{
+    font-size: 1.1rem;
+    transition: all 0.2s ease; /* added a transition for smoother hover effect, help from copilot */
+  }
+
+  a:hover {
+    transform: translateY(-2px); /* added a lift on hover for better interactivity, help from copilot */
+    text-decoration: underline;
+  }
+  
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  header {
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: #00274C;
+    padding: 1.5rem 4rem;
+  }
+  
+  .logo img {
+    margin: 0;
+  }
+
+  .logo {
+    padding: 0 0 0 0;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  nav ul {
+    grid-template-columns: repeat(4, auto);
+    justify-content: end;
+    gap: 2rem;
+  }
+
+  nav a {
+    background: none; 
+    border: none; 
+    color: white;
+    padding: 0;
+    font-size: 1.3rem;
+  }
+
+  nav a:hover {
+    color: #FFCB05;
+    text-decoration: underline;
+    background: none;
+    border: none;
+  }
+
+  .active {
+    background: none;
+    border: none;
+    color: #FFCB05;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ========================
+    LARGE DESKTOP-ONLY BREAKPOINT
+=========================*/
+@media (min-width: 1440px) {
+  .desktop-layout {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    gap: 0.5rem;
+  }
+
+  .sidebar {
+    width: 0.25fr;
+    position: sticky;
+    align-self: start;
+    padding: 1rem;
+  }
+
+  .navside ul {
+    display: block;
+    padding: 1rem;
+    background-color: #00274C;
+    border-radius: 12px;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: sticky;
+    top: 1rem;
+    padding: 1rem;
+    background: #f7f7f7;
+    border-radius: 8px;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    display: block;
+    background-color: #003363;
+    padding: 0.5rem;
+  }
+
+  .sidebar a:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+    text-decoration: none;
+  }
 }
